@@ -9,6 +9,11 @@ namespace AILDOTEDT.Models
     public class EditObject
     {
         public string Name { get; set; } = "";
+        public Palette Palette { get; set; } = new Palette(Enums.MachineType.PC_6001MK2_Screen_3);
         public List<Layer> LayerList { get; set; } = new List<Layer>();
+
+        public EditObject() 
+        {
+        }
     }
 }

@@ -28,48 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cboZoom = new System.Windows.Forms.ComboBox();
-            this.picDotEdit = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picDotEdit)).BeginInit();
-            this.SuspendLayout();
+            cboZoom = new ComboBox();
+            picDotEdit = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picDotEdit).BeginInit();
+            SuspendLayout();
             // 
             // cboZoom
             // 
-            this.cboZoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboZoom.FormattingEnabled = true;
-            this.cboZoom.Items.AddRange(new object[] {
-            "x1",
-            "x2",
-            "x4",
-            "x8",
-            "x16"});
-            this.cboZoom.Location = new System.Drawing.Point(3, 4);
-            this.cboZoom.Name = "cboZoom";
-            this.cboZoom.Size = new System.Drawing.Size(120, 23);
-            this.cboZoom.TabIndex = 5;
+            cboZoom.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboZoom.FormattingEnabled = true;
+            cboZoom.Items.AddRange(new object[] { "x1", "x2", "x4", "x8", "x16" });
+            cboZoom.Location = new Point(3, 4);
+            cboZoom.Name = "cboZoom";
+            cboZoom.Size = new Size(120, 23);
+            cboZoom.TabIndex = 5;
             // 
             // picDotEdit
             // 
-            this.picDotEdit.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.picDotEdit.Location = new System.Drawing.Point(3, 33);
-            this.picDotEdit.Name = "picDotEdit";
-            this.picDotEdit.Size = new System.Drawing.Size(406, 313);
-            this.picDotEdit.TabIndex = 4;
-            this.picDotEdit.TabStop = false;
+            picDotEdit.BackColor = SystemColors.ControlDark;
+            picDotEdit.Location = new Point(3, 33);
+            picDotEdit.Name = "picDotEdit";
+            picDotEdit.Size = new Size(406, 313);
+            picDotEdit.TabIndex = 4;
+            picDotEdit.TabStop = false;
             // 
             // ToolDotEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 346);
-            this.Controls.Add(this.cboZoom);
-            this.Controls.Add(this.picDotEdit);
-            this.Name = "ToolDotEdit";
-            this.ShowIcon = false;
-            this.Text = "ToolDotEdit";
-            ((System.ComponentModel.ISupportInitialize)(this.picDotEdit)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(411, 346);
+            Controls.Add(cboZoom);
+            Controls.Add(picDotEdit);
+            Name = "ToolDotEdit";
+            ShowIcon = false;
+            Text = "ToolDotEdit";
+            ((System.ComponentModel.ISupportInitialize)picDotEdit).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

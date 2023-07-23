@@ -31,7 +31,7 @@ namespace AILDOTEDT.UserControls
 
         private void picPalette_Paint(object sender, PaintEventArgs e)
         {
-            e.
+            //e.
         }
     }
 }

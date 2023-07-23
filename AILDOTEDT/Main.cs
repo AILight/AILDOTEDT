@@ -19,6 +19,8 @@ namespace AILDOTEDT
             IntPtr ptr1 = bmp.GetHicon();
             */
 
+            
+
         }
 
         private void picDotEdit_Paint(object sender, PaintEventArgs e)
@@ -33,6 +35,7 @@ namespace AILDOTEDT
 
         private void picMain_Paint(object sender, PaintEventArgs e)
         {
+            /*
             var rectangle = new Rectangle(100, 100, 500, 500);
 
             e.Graphics.FillRectangle(Brushes.White, rectangle);
@@ -47,6 +50,7 @@ namespace AILDOTEDT
             {
                 e.Graphics.DrawLine(Pens.Black, new Point(rectangle.X, y), new Point(rectangle.Right, y));
             }
+            */
 
         }
 
@@ -56,7 +60,7 @@ namespace AILDOTEDT
             {
                 if (dlgNewProject.ShowDialog() == DialogResult.OK)
                 {
-
+                    Project.EditObjects.Add(new EditObject());
                 }
             }
         }

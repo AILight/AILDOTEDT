@@ -14,6 +14,7 @@ namespace AILDOTEDT
     {
         public class ResultValueModel
         {
+            public string Name { get; set; } = string.Empty;
             public int ScreenWidth { get; set; }
             public int ScreenHeight { get; set; }
             public int CharacterWidth { get; set; }
@@ -32,6 +33,7 @@ namespace AILDOTEDT
         {
             this.ResultValue = new ResultValueModel()
             {
+                Name = txtName.Text,
                 ScreenWidth = (int)nudScreenWidth.Value,
                 ScreenHeight = (int)nudScreenHeight.Value,
                 CharacterWidth = (int)nudCharacterWidth.Value,
@@ -45,6 +47,11 @@ namespace AILDOTEDT
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
+        }
+
+        private void DlgNewProject_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
