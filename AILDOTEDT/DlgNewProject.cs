@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AILDOTEDT.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,17 +13,7 @@ namespace AILDOTEDT
 {
     public partial class DlgNewProject : Form
     {
-        public class ResultValueModel
-        {
-            public string Name { get; set; } = string.Empty;
-            public int ScreenWidth { get; set; }
-            public int ScreenHeight { get; set; }
-            public int CharacterWidth { get; set; }
-            public int CharacterHeight { get; set; }
-            public int ColorCount { get; set; }
-        }
-
-        public ResultValueModel? ResultValue { get; private set; }
+        public EditStatus? ResultValue { get; private set; }
 
         public DlgNewProject()
         {
@@ -31,7 +22,7 @@ namespace AILDOTEDT
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            this.ResultValue = new ResultValueModel()
+            this.ResultValue = new EditStatus()
             {
                 Name = txtName.Text,
                 ScreenWidth = (int)nudScreenWidth.Value,

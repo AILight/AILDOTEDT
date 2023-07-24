@@ -60,7 +60,7 @@ namespace AILDOTEDT
             {
                 if (dlgNewProject.ShowDialog() == DialogResult.OK)
                 {
-                    Project.EditObjects.Add(new EditObject());
+                    Project.EditObjects.Add(new EditObject(dlgNewProject.ResultValue));
                 }
             }
         }
