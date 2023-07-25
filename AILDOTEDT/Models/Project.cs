@@ -9,6 +9,7 @@ namespace AILDOTEDT.Models
     public class Project
     {
         public string Name { get; set; } = "";
-        public List<EditObject> EditObjects { get; set; } = new List<EditObject>();
+        public List<EditContent> EditContents { get; set; } = new List<EditContent>();
+        public EditContent? SelectedEditContent = default(EditContent);
     }
 }

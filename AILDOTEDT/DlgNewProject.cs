@@ -13,11 +13,18 @@ namespace AILDOTEDT
 {
     public partial class DlgNewProject : Form
     {
-        public EditStatus? ResultValue { get; private set; }
+        public EditStatus ResultValue { get; private set; } = new EditStatus();
 
         public DlgNewProject()
         {
             InitializeComponent();
+
+            txtName.Text = "キャラクター";
+            nudScreenWidth.Value = 800;
+            nudScreenHeight.Value = 600;
+            nudCharacterWidth.Value = 16;
+            nudCharacterHeight.Value = 8;
+            nudColorCount.Value = 16;
         }
 
         private void btnOK_Click(object sender, EventArgs e)

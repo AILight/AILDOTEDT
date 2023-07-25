@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace AILDOTEDT.Models
 {
-    public class EditObject
+    public class EditContent
     {
-        public EditStatus? ResultValue { get; }
+        public EditStatus Status { get; }
         public List<Layer> LayerList { get; set; } = new List<Layer>();
 
-        public EditObject(EditStatus? resultValue)
+        public EditContent(EditStatus status)
         {
-            ResultValue = resultValue;
+            Status = status;
         }
     }
 }

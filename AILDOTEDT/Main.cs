@@ -1,5 +1,6 @@
 using AILDOTEDT.Models;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace AILDOTEDT
 {
@@ -19,7 +20,7 @@ namespace AILDOTEDT
             IntPtr ptr1 = bmp.GetHicon();
             */
 
-            
+
 
         }
 
@@ -60,8 +61,44 @@ namespace AILDOTEDT
             {
                 if (dlgNewProject.ShowDialog() == DialogResult.OK)
                 {
-                    Project.EditObjects.Add(new EditObject(dlgNewProject.ResultValue));
+                    var editContent = new EditContent(dlgNewProject.ResultValue);
+                    if (Project.EditContents.Count == 0)
+                    {
+                        Project.SelectedEditContent = editContent;
+                    }
+                    Project.EditContents.Add(editContent);
+                    Refresh_EditContents();
                 }
+            }
+        }
+
+        private void Refresh_EditContents()
+        {
+            toolStripContent.Items.Clear();
+
+            foreach (var editContent in Project.EditContents)
+            {
+                toolStripContent.Items.Add(new ToolStripButton(editContent.Status.Name) { CheckState = (Project.SelectedEditContent == editContent ? CheckState.Checked : CheckState.Unchecked), Tag = editContent });
+                toolStripContent.Items.Add(new ToolStripSeparator());
+            }
+        }
+
+        private void toolStripContent_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem is ToolStripButton clickedToolStripButton)
+            {
+                // 選択された項目を全クリアする
+                foreach (var item in toolStripContent.Items)
+                {
+                    if (item is ToolStripButton toolStripButton)
+                    {
+                        toolStripButton.CheckState = CheckState.Unchecked;
+                    }
+                }
+
+                // 再度項目を選択する
+                Project.SelectedEditContent = (EditContent)clickedToolStripButton.Tag;
+                clickedToolStripButton.CheckState = CheckState.Checked;
             }
         }
     }

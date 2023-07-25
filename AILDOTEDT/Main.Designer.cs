@@ -29,471 +29,431 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.tableLayoutPanelTop = new System.Windows.Forms.TableLayoutPanel();
-            this.toolStripCommand = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton_New = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_Open = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_Save = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_Print = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator_File = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton_Cut = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_Copy = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton_Paste = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator_Edit = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton_Help = new System.Windows.Forms.ToolStripButton();
-            this.toolStripContent = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripButton();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem_File = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_New = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Open = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator_FileMenu = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem_Save = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_SaveAs = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator_SaveMenu = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem_Print = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_PrintPreview = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator_PrintMenu = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem_Exit = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Edit = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Undo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Redo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator_UndoMenu = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem_Cut = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Copy = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Paste = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator_CAPMenu = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem_SelectAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Tool = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Customize = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Option = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_Help = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem_OpenHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator_HelpMenu = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem_About = new System.Windows.Forms.ToolStripMenuItem();
-            this.picMain = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanelTop.SuspendLayout();
-            this.toolStripCommand.SuspendLayout();
-            this.toolStripContent.SuspendLayout();
-            this.menuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
-            this.SuspendLayout();
+            statusStrip = new StatusStrip();
+            tableLayoutPanelTop = new TableLayoutPanel();
+            toolStripCommand = new ToolStrip();
+            toolStripButton_New = new ToolStripButton();
+            toolStripButton_Open = new ToolStripButton();
+            toolStripButton_Save = new ToolStripButton();
+            toolStripButton_Print = new ToolStripButton();
+            toolStripSeparator_File = new ToolStripSeparator();
+            toolStripButton_Cut = new ToolStripButton();
+            toolStripButton_Copy = new ToolStripButton();
+            toolStripButton_Paste = new ToolStripButton();
+            toolStripSeparator_Edit = new ToolStripSeparator();
+            toolStripButton_Help = new ToolStripButton();
+            toolStripContent = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
+            toolStripLabel1 = new ToolStripButton();
+            menuStrip = new MenuStrip();
+            toolStripMenuItem_File = new ToolStripMenuItem();
+            toolStripMenuItem_New = new ToolStripMenuItem();
+            toolStripMenuItem_Open = new ToolStripMenuItem();
+            toolStripSeparator_FileMenu = new ToolStripSeparator();
+            toolStripMenuItem_Save = new ToolStripMenuItem();
+            toolStripMenuItem_SaveAs = new ToolStripMenuItem();
+            toolStripSeparator_SaveMenu = new ToolStripSeparator();
+            toolStripMenuItem_Print = new ToolStripMenuItem();
+            toolStripMenuItem_PrintPreview = new ToolStripMenuItem();
+            toolStripSeparator_PrintMenu = new ToolStripSeparator();
+            toolStripMenuItem_Exit = new ToolStripMenuItem();
+            toolStripMenuItem_Edit = new ToolStripMenuItem();
+            toolStripMenuItem_Undo = new ToolStripMenuItem();
+            toolStripMenuItem_Redo = new ToolStripMenuItem();
+            toolStripSeparator_UndoMenu = new ToolStripSeparator();
+            toolStripMenuItem_Cut = new ToolStripMenuItem();
+            toolStripMenuItem_Copy = new ToolStripMenuItem();
+            toolStripMenuItem_Paste = new ToolStripMenuItem();
+            toolStripSeparator_CAPMenu = new ToolStripSeparator();
+            toolStripMenuItem_SelectAll = new ToolStripMenuItem();
+            toolStripMenuItem_Tool = new ToolStripMenuItem();
+            toolStripMenuItem_Customize = new ToolStripMenuItem();
+            toolStripMenuItem_Option = new ToolStripMenuItem();
+            toolStripMenuItem_Help = new ToolStripMenuItem();
+            toolStripMenuItem_OpenHelp = new ToolStripMenuItem();
+            toolStripSeparator_HelpMenu = new ToolStripSeparator();
+            toolStripMenuItem_About = new ToolStripMenuItem();
+            picMain = new PictureBox();
+            tableLayoutPanelTop.SuspendLayout();
+            toolStripCommand.SuspendLayout();
+            toolStripContent.SuspendLayout();
+            menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picMain).BeginInit();
+            SuspendLayout();
             // 
             // statusStrip
             // 
-            this.statusStrip.Location = new System.Drawing.Point(0, 707);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1207, 22);
-            this.statusStrip.TabIndex = 10;
-            this.statusStrip.Text = "statusStrip1";
+            statusStrip.Location = new Point(0, 707);
+            statusStrip.Name = "statusStrip";
+            statusStrip.Size = new Size(1207, 22);
+            statusStrip.TabIndex = 10;
+            statusStrip.Text = "statusStrip1";
             // 
             // tableLayoutPanelTop
             // 
-            this.tableLayoutPanelTop.BackColor = System.Drawing.SystemColors.Control;
-            this.tableLayoutPanelTop.ColumnCount = 2;
-            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.61806F));
-            this.tableLayoutPanelTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.38194F));
-            this.tableLayoutPanelTop.Controls.Add(this.toolStripCommand, 0, 1);
-            this.tableLayoutPanelTop.Controls.Add(this.toolStripContent, 0, 0);
-            this.tableLayoutPanelTop.Controls.Add(this.menuStrip, 0, 0);
-            this.tableLayoutPanelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanelTop.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanelTop.Name = "tableLayoutPanelTop";
-            this.tableLayoutPanelTop.RowCount = 2;
-            this.tableLayoutPanelTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelTop.Size = new System.Drawing.Size(1207, 49);
-            this.tableLayoutPanelTop.TabIndex = 15;
+            tableLayoutPanelTop.BackColor = SystemColors.Control;
+            tableLayoutPanelTop.ColumnCount = 2;
+            tableLayoutPanelTop.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.61806F));
+            tableLayoutPanelTop.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.38194F));
+            tableLayoutPanelTop.Controls.Add(toolStripCommand, 0, 1);
+            tableLayoutPanelTop.Controls.Add(toolStripContent, 0, 0);
+            tableLayoutPanelTop.Controls.Add(menuStrip, 0, 0);
+            tableLayoutPanelTop.Dock = DockStyle.Top;
+            tableLayoutPanelTop.Location = new Point(0, 0);
+            tableLayoutPanelTop.Name = "tableLayoutPanelTop";
+            tableLayoutPanelTop.RowCount = 2;
+            tableLayoutPanelTop.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanelTop.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanelTop.Size = new Size(1207, 49);
+            tableLayoutPanelTop.TabIndex = 15;
             // 
             // toolStripCommand
             // 
-            this.tableLayoutPanelTop.SetColumnSpan(this.toolStripCommand, 2);
-            this.toolStripCommand.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton_New,
-            this.toolStripButton_Open,
-            this.toolStripButton_Save,
-            this.toolStripButton_Print,
-            this.toolStripSeparator_File,
-            this.toolStripButton_Cut,
-            this.toolStripButton_Copy,
-            this.toolStripButton_Paste,
-            this.toolStripSeparator_Edit,
-            this.toolStripButton_Help});
-            this.toolStripCommand.Location = new System.Drawing.Point(0, 24);
-            this.toolStripCommand.Name = "toolStripCommand";
-            this.toolStripCommand.Size = new System.Drawing.Size(1207, 25);
-            this.toolStripCommand.TabIndex = 18;
-            this.toolStripCommand.Text = "toolStrip1";
+            tableLayoutPanelTop.SetColumnSpan(toolStripCommand, 2);
+            toolStripCommand.Items.AddRange(new ToolStripItem[] { toolStripButton_New, toolStripButton_Open, toolStripButton_Save, toolStripButton_Print, toolStripSeparator_File, toolStripButton_Cut, toolStripButton_Copy, toolStripButton_Paste, toolStripSeparator_Edit, toolStripButton_Help });
+            toolStripCommand.Location = new Point(0, 24);
+            toolStripCommand.Name = "toolStripCommand";
+            toolStripCommand.Size = new Size(1207, 25);
+            toolStripCommand.TabIndex = 18;
+            toolStripCommand.Text = "toolStrip1";
             // 
             // toolStripButton_New
             // 
-            this.toolStripButton_New.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_New.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_New.Image")));
-            this.toolStripButton_New.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_New.Name = "toolStripButton_New";
-            this.toolStripButton_New.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_New.Text = "新規(&N)";
-            this.toolStripButton_New.Click += new System.EventHandler(this.toolStripMenuItem_New_Click);
+            toolStripButton_New.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton_New.Image = (Image)resources.GetObject("toolStripButton_New.Image");
+            toolStripButton_New.ImageTransparentColor = Color.Magenta;
+            toolStripButton_New.Name = "toolStripButton_New";
+            toolStripButton_New.Size = new Size(23, 22);
+            toolStripButton_New.Text = "新規(&N)";
+            toolStripButton_New.Click += toolStripMenuItem_New_Click;
             // 
             // toolStripButton_Open
             // 
-            this.toolStripButton_Open.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Open.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Open.Image")));
-            this.toolStripButton_Open.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Open.Name = "toolStripButton_Open";
-            this.toolStripButton_Open.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_Open.Text = "開く(&O)";
+            toolStripButton_Open.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton_Open.Image = (Image)resources.GetObject("toolStripButton_Open.Image");
+            toolStripButton_Open.ImageTransparentColor = Color.Magenta;
+            toolStripButton_Open.Name = "toolStripButton_Open";
+            toolStripButton_Open.Size = new Size(23, 22);
+            toolStripButton_Open.Text = "開く(&O)";
             // 
             // toolStripButton_Save
             // 
-            this.toolStripButton_Save.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Save.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Save.Image")));
-            this.toolStripButton_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Save.Name = "toolStripButton_Save";
-            this.toolStripButton_Save.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_Save.Text = "保存(&S)";
+            toolStripButton_Save.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton_Save.Image = (Image)resources.GetObject("toolStripButton_Save.Image");
+            toolStripButton_Save.ImageTransparentColor = Color.Magenta;
+            toolStripButton_Save.Name = "toolStripButton_Save";
+            toolStripButton_Save.Size = new Size(23, 22);
+            toolStripButton_Save.Text = "保存(&S)";
             // 
             // toolStripButton_Print
             // 
-            this.toolStripButton_Print.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Print.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Print.Image")));
-            this.toolStripButton_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Print.Name = "toolStripButton_Print";
-            this.toolStripButton_Print.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_Print.Text = "印刷(&P)";
+            toolStripButton_Print.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton_Print.Image = (Image)resources.GetObject("toolStripButton_Print.Image");
+            toolStripButton_Print.ImageTransparentColor = Color.Magenta;
+            toolStripButton_Print.Name = "toolStripButton_Print";
+            toolStripButton_Print.Size = new Size(23, 22);
+            toolStripButton_Print.Text = "印刷(&P)";
             // 
             // toolStripSeparator_File
             // 
-            this.toolStripSeparator_File.Name = "toolStripSeparator_File";
-            this.toolStripSeparator_File.Size = new System.Drawing.Size(6, 25);
+            toolStripSeparator_File.Name = "toolStripSeparator_File";
+            toolStripSeparator_File.Size = new Size(6, 25);
             // 
             // toolStripButton_Cut
             // 
-            this.toolStripButton_Cut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Cut.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Cut.Image")));
-            this.toolStripButton_Cut.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Cut.Name = "toolStripButton_Cut";
-            this.toolStripButton_Cut.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_Cut.Text = "切り取り(&U)";
+            toolStripButton_Cut.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton_Cut.Image = (Image)resources.GetObject("toolStripButton_Cut.Image");
+            toolStripButton_Cut.ImageTransparentColor = Color.Magenta;
+            toolStripButton_Cut.Name = "toolStripButton_Cut";
+            toolStripButton_Cut.Size = new Size(23, 22);
+            toolStripButton_Cut.Text = "切り取り(&U)";
             // 
             // toolStripButton_Copy
             // 
-            this.toolStripButton_Copy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Copy.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Copy.Image")));
-            this.toolStripButton_Copy.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Copy.Name = "toolStripButton_Copy";
-            this.toolStripButton_Copy.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_Copy.Text = "コピー(&C)";
+            toolStripButton_Copy.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton_Copy.Image = (Image)resources.GetObject("toolStripButton_Copy.Image");
+            toolStripButton_Copy.ImageTransparentColor = Color.Magenta;
+            toolStripButton_Copy.Name = "toolStripButton_Copy";
+            toolStripButton_Copy.Size = new Size(23, 22);
+            toolStripButton_Copy.Text = "コピー(&C)";
             // 
             // toolStripButton_Paste
             // 
-            this.toolStripButton_Paste.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Paste.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Paste.Image")));
-            this.toolStripButton_Paste.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Paste.Name = "toolStripButton_Paste";
-            this.toolStripButton_Paste.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_Paste.Text = "貼り付け(&P)";
+            toolStripButton_Paste.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton_Paste.Image = (Image)resources.GetObject("toolStripButton_Paste.Image");
+            toolStripButton_Paste.ImageTransparentColor = Color.Magenta;
+            toolStripButton_Paste.Name = "toolStripButton_Paste";
+            toolStripButton_Paste.Size = new Size(23, 22);
+            toolStripButton_Paste.Text = "貼り付け(&P)";
             // 
             // toolStripSeparator_Edit
             // 
-            this.toolStripSeparator_Edit.Name = "toolStripSeparator_Edit";
-            this.toolStripSeparator_Edit.Size = new System.Drawing.Size(6, 25);
+            toolStripSeparator_Edit.Name = "toolStripSeparator_Edit";
+            toolStripSeparator_Edit.Size = new Size(6, 25);
             // 
             // toolStripButton_Help
             // 
-            this.toolStripButton_Help.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton_Help.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_Help.Image")));
-            this.toolStripButton_Help.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton_Help.Name = "toolStripButton_Help";
-            this.toolStripButton_Help.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton_Help.Text = "ヘルプ(&L)";
+            toolStripButton_Help.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton_Help.Image = (Image)resources.GetObject("toolStripButton_Help.Image");
+            toolStripButton_Help.ImageTransparentColor = Color.Magenta;
+            toolStripButton_Help.Name = "toolStripButton_Help";
+            toolStripButton_Help.Size = new Size(23, 22);
+            toolStripButton_Help.Text = "ヘルプ(&L)";
             // 
             // toolStripContent
             // 
-            this.toolStripContent.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripSeparator3,
-            this.toolStripLabel1});
-            this.toolStripContent.Location = new System.Drawing.Point(272, 0);
-            this.toolStripContent.Name = "toolStripContent";
-            this.toolStripContent.Size = new System.Drawing.Size(935, 24);
-            this.toolStripContent.TabIndex = 14;
-            this.toolStripContent.Text = "toolStrip2";
+            toolStripContent.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripSeparator3, toolStripLabel1 });
+            toolStripContent.Location = new Point(272, 0);
+            toolStripContent.Name = "toolStripContent";
+            toolStripContent.Size = new Size(935, 24);
+            toolStripContent.TabIndex = 14;
+            toolStripContent.Text = "toolStrip2";
+            toolStripContent.ItemClicked += toolStripContent_ItemClicked;
             // 
             // toolStripButton1
             // 
-            this.toolStripButton1.Checked = true;
-            this.toolStripButton1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(64, 21);
-            this.toolStripButton1.Text = "マップパーツ";
+            toolStripButton1.Checked = true;
+            toolStripButton1.CheckState = CheckState.Checked;
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(63, 21);
+            toolStripButton1.Text = "マップパーツ";
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 24);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 24);
             // 
             // toolStripLabel1
             // 
-            this.toolStripLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripLabel1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel1.Image")));
-            this.toolStripLabel1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(63, 21);
-            this.toolStripLabel1.Text = "オブジェクト";
+            toolStripLabel1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripLabel1.Image = (Image)resources.GetObject("toolStripLabel1.Image");
+            toolStripLabel1.ImageTransparentColor = Color.Magenta;
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(62, 21);
+            toolStripLabel1.Text = "オブジェクト";
             // 
             // menuStrip
             // 
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_File,
-            this.toolStripMenuItem_Edit,
-            this.toolStripMenuItem_Tool,
-            this.toolStripMenuItem_Help});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(272, 24);
-            this.menuStrip.TabIndex = 1;
-            this.menuStrip.Text = "aaaa";
+            menuStrip.Items.AddRange(new ToolStripItem[] { toolStripMenuItem_File, toolStripMenuItem_Edit, toolStripMenuItem_Tool, toolStripMenuItem_Help });
+            menuStrip.Location = new Point(0, 0);
+            menuStrip.Name = "menuStrip";
+            menuStrip.Size = new Size(272, 24);
+            menuStrip.TabIndex = 1;
+            menuStrip.Text = "aaaa";
             // 
             // toolStripMenuItem_File
             // 
-            this.toolStripMenuItem_File.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_New,
-            this.toolStripMenuItem_Open,
-            this.toolStripSeparator_FileMenu,
-            this.toolStripMenuItem_Save,
-            this.toolStripMenuItem_SaveAs,
-            this.toolStripSeparator_SaveMenu,
-            this.toolStripMenuItem_Print,
-            this.toolStripMenuItem_PrintPreview,
-            this.toolStripSeparator_PrintMenu,
-            this.toolStripMenuItem_Exit});
-            this.toolStripMenuItem_File.Name = "toolStripMenuItem_File";
-            this.toolStripMenuItem_File.Size = new System.Drawing.Size(67, 20);
-            this.toolStripMenuItem_File.Text = "ファイル(&F)";
+            toolStripMenuItem_File.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem_New, toolStripMenuItem_Open, toolStripSeparator_FileMenu, toolStripMenuItem_Save, toolStripMenuItem_SaveAs, toolStripSeparator_SaveMenu, toolStripMenuItem_Print, toolStripMenuItem_PrintPreview, toolStripSeparator_PrintMenu, toolStripMenuItem_Exit });
+            toolStripMenuItem_File.Name = "toolStripMenuItem_File";
+            toolStripMenuItem_File.Size = new Size(67, 20);
+            toolStripMenuItem_File.Text = "ファイル(&F)";
             // 
             // toolStripMenuItem_New
             // 
-            this.toolStripMenuItem_New.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem_New.Image")));
-            this.toolStripMenuItem_New.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem_New.Name = "toolStripMenuItem_New";
-            this.toolStripMenuItem_New.Size = new System.Drawing.Size(177, 22);
-            this.toolStripMenuItem_New.Text = "新規(&N)";
-            this.toolStripMenuItem_New.Click += new System.EventHandler(this.toolStripMenuItem_New_Click);
+            toolStripMenuItem_New.Image = (Image)resources.GetObject("toolStripMenuItem_New.Image");
+            toolStripMenuItem_New.ImageTransparentColor = Color.Magenta;
+            toolStripMenuItem_New.Name = "toolStripMenuItem_New";
+            toolStripMenuItem_New.Size = new Size(177, 22);
+            toolStripMenuItem_New.Text = "新規(&N)";
+            toolStripMenuItem_New.Click += toolStripMenuItem_New_Click;
             // 
             // toolStripMenuItem_Open
             // 
-            this.toolStripMenuItem_Open.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem_Open.Image")));
-            this.toolStripMenuItem_Open.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem_Open.Name = "toolStripMenuItem_Open";
-            this.toolStripMenuItem_Open.Size = new System.Drawing.Size(177, 22);
-            this.toolStripMenuItem_Open.Text = "開く(&O)";
+            toolStripMenuItem_Open.Image = (Image)resources.GetObject("toolStripMenuItem_Open.Image");
+            toolStripMenuItem_Open.ImageTransparentColor = Color.Magenta;
+            toolStripMenuItem_Open.Name = "toolStripMenuItem_Open";
+            toolStripMenuItem_Open.Size = new Size(177, 22);
+            toolStripMenuItem_Open.Text = "開く(&O)";
             // 
             // toolStripSeparator_FileMenu
             // 
-            this.toolStripSeparator_FileMenu.Name = "toolStripSeparator_FileMenu";
-            this.toolStripSeparator_FileMenu.Size = new System.Drawing.Size(174, 6);
+            toolStripSeparator_FileMenu.Name = "toolStripSeparator_FileMenu";
+            toolStripSeparator_FileMenu.Size = new Size(174, 6);
             // 
             // toolStripMenuItem_Save
             // 
-            this.toolStripMenuItem_Save.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem_Save.Image")));
-            this.toolStripMenuItem_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem_Save.Name = "toolStripMenuItem_Save";
-            this.toolStripMenuItem_Save.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.toolStripMenuItem_Save.Size = new System.Drawing.Size(177, 22);
-            this.toolStripMenuItem_Save.Text = "保存(&S)";
+            toolStripMenuItem_Save.Image = (Image)resources.GetObject("toolStripMenuItem_Save.Image");
+            toolStripMenuItem_Save.ImageTransparentColor = Color.Magenta;
+            toolStripMenuItem_Save.Name = "toolStripMenuItem_Save";
+            toolStripMenuItem_Save.ShortcutKeys = Keys.Control | Keys.S;
+            toolStripMenuItem_Save.Size = new Size(177, 22);
+            toolStripMenuItem_Save.Text = "保存(&S)";
             // 
             // toolStripMenuItem_SaveAs
             // 
-            this.toolStripMenuItem_SaveAs.Name = "toolStripMenuItem_SaveAs";
-            this.toolStripMenuItem_SaveAs.Size = new System.Drawing.Size(177, 22);
-            this.toolStripMenuItem_SaveAs.Text = "名前を付けて保存(&A)";
+            toolStripMenuItem_SaveAs.Name = "toolStripMenuItem_SaveAs";
+            toolStripMenuItem_SaveAs.Size = new Size(177, 22);
+            toolStripMenuItem_SaveAs.Text = "名前を付けて保存(&A)";
             // 
             // toolStripSeparator_SaveMenu
             // 
-            this.toolStripSeparator_SaveMenu.Name = "toolStripSeparator_SaveMenu";
-            this.toolStripSeparator_SaveMenu.Size = new System.Drawing.Size(174, 6);
+            toolStripSeparator_SaveMenu.Name = "toolStripSeparator_SaveMenu";
+            toolStripSeparator_SaveMenu.Size = new Size(174, 6);
             // 
             // toolStripMenuItem_Print
             // 
-            this.toolStripMenuItem_Print.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem_Print.Image")));
-            this.toolStripMenuItem_Print.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem_Print.Name = "toolStripMenuItem_Print";
-            this.toolStripMenuItem_Print.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.toolStripMenuItem_Print.Size = new System.Drawing.Size(177, 22);
-            this.toolStripMenuItem_Print.Text = "印刷(&P)";
+            toolStripMenuItem_Print.Image = (Image)resources.GetObject("toolStripMenuItem_Print.Image");
+            toolStripMenuItem_Print.ImageTransparentColor = Color.Magenta;
+            toolStripMenuItem_Print.Name = "toolStripMenuItem_Print";
+            toolStripMenuItem_Print.ShortcutKeys = Keys.Control | Keys.P;
+            toolStripMenuItem_Print.Size = new Size(177, 22);
+            toolStripMenuItem_Print.Text = "印刷(&P)";
             // 
             // toolStripMenuItem_PrintPreview
             // 
-            this.toolStripMenuItem_PrintPreview.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem_PrintPreview.Image")));
-            this.toolStripMenuItem_PrintPreview.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem_PrintPreview.Name = "toolStripMenuItem_PrintPreview";
-            this.toolStripMenuItem_PrintPreview.Size = new System.Drawing.Size(177, 22);
-            this.toolStripMenuItem_PrintPreview.Text = "印刷プレビュー(&V)";
+            toolStripMenuItem_PrintPreview.Image = (Image)resources.GetObject("toolStripMenuItem_PrintPreview.Image");
+            toolStripMenuItem_PrintPreview.ImageTransparentColor = Color.Magenta;
+            toolStripMenuItem_PrintPreview.Name = "toolStripMenuItem_PrintPreview";
+            toolStripMenuItem_PrintPreview.Size = new Size(177, 22);
+            toolStripMenuItem_PrintPreview.Text = "印刷プレビュー(&V)";
             // 
             // toolStripSeparator_PrintMenu
             // 
-            this.toolStripSeparator_PrintMenu.Name = "toolStripSeparator_PrintMenu";
-            this.toolStripSeparator_PrintMenu.Size = new System.Drawing.Size(174, 6);
+            toolStripSeparator_PrintMenu.Name = "toolStripSeparator_PrintMenu";
+            toolStripSeparator_PrintMenu.Size = new Size(174, 6);
             // 
             // toolStripMenuItem_Exit
             // 
-            this.toolStripMenuItem_Exit.Name = "toolStripMenuItem_Exit";
-            this.toolStripMenuItem_Exit.Size = new System.Drawing.Size(177, 22);
-            this.toolStripMenuItem_Exit.Text = "終了(&X)";
+            toolStripMenuItem_Exit.Name = "toolStripMenuItem_Exit";
+            toolStripMenuItem_Exit.Size = new Size(177, 22);
+            toolStripMenuItem_Exit.Text = "終了(&X)";
             // 
             // toolStripMenuItem_Edit
             // 
-            this.toolStripMenuItem_Edit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_Undo,
-            this.toolStripMenuItem_Redo,
-            this.toolStripSeparator_UndoMenu,
-            this.toolStripMenuItem_Cut,
-            this.toolStripMenuItem_Copy,
-            this.toolStripMenuItem_Paste,
-            this.toolStripSeparator_CAPMenu,
-            this.toolStripMenuItem_SelectAll});
-            this.toolStripMenuItem_Edit.Name = "toolStripMenuItem_Edit";
-            this.toolStripMenuItem_Edit.Size = new System.Drawing.Size(57, 20);
-            this.toolStripMenuItem_Edit.Text = "編集(&E)";
+            toolStripMenuItem_Edit.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem_Undo, toolStripMenuItem_Redo, toolStripSeparator_UndoMenu, toolStripMenuItem_Cut, toolStripMenuItem_Copy, toolStripMenuItem_Paste, toolStripSeparator_CAPMenu, toolStripMenuItem_SelectAll });
+            toolStripMenuItem_Edit.Name = "toolStripMenuItem_Edit";
+            toolStripMenuItem_Edit.Size = new Size(57, 20);
+            toolStripMenuItem_Edit.Text = "編集(&E)";
             // 
             // toolStripMenuItem_Undo
             // 
-            this.toolStripMenuItem_Undo.Name = "toolStripMenuItem_Undo";
-            this.toolStripMenuItem_Undo.Size = new System.Drawing.Size(143, 22);
-            this.toolStripMenuItem_Undo.Text = "元に戻す(&U)";
+            toolStripMenuItem_Undo.Name = "toolStripMenuItem_Undo";
+            toolStripMenuItem_Undo.Size = new Size(143, 22);
+            toolStripMenuItem_Undo.Text = "元に戻す(&U)";
             // 
             // toolStripMenuItem_Redo
             // 
-            this.toolStripMenuItem_Redo.Name = "toolStripMenuItem_Redo";
-            this.toolStripMenuItem_Redo.Size = new System.Drawing.Size(143, 22);
-            this.toolStripMenuItem_Redo.Text = "やり直し(&R)";
+            toolStripMenuItem_Redo.Name = "toolStripMenuItem_Redo";
+            toolStripMenuItem_Redo.Size = new Size(143, 22);
+            toolStripMenuItem_Redo.Text = "やり直し(&R)";
             // 
             // toolStripSeparator_UndoMenu
             // 
-            this.toolStripSeparator_UndoMenu.Name = "toolStripSeparator_UndoMenu";
-            this.toolStripSeparator_UndoMenu.Size = new System.Drawing.Size(140, 6);
+            toolStripSeparator_UndoMenu.Name = "toolStripSeparator_UndoMenu";
+            toolStripSeparator_UndoMenu.Size = new Size(140, 6);
             // 
             // toolStripMenuItem_Cut
             // 
-            this.toolStripMenuItem_Cut.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem_Cut.Image")));
-            this.toolStripMenuItem_Cut.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem_Cut.Name = "toolStripMenuItem_Cut";
-            this.toolStripMenuItem_Cut.Size = new System.Drawing.Size(143, 22);
-            this.toolStripMenuItem_Cut.Text = "切り取り(&T)";
+            toolStripMenuItem_Cut.Image = (Image)resources.GetObject("toolStripMenuItem_Cut.Image");
+            toolStripMenuItem_Cut.ImageTransparentColor = Color.Magenta;
+            toolStripMenuItem_Cut.Name = "toolStripMenuItem_Cut";
+            toolStripMenuItem_Cut.Size = new Size(143, 22);
+            toolStripMenuItem_Cut.Text = "切り取り(&T)";
             // 
             // toolStripMenuItem_Copy
             // 
-            this.toolStripMenuItem_Copy.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem_Copy.Image")));
-            this.toolStripMenuItem_Copy.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem_Copy.Name = "toolStripMenuItem_Copy";
-            this.toolStripMenuItem_Copy.Size = new System.Drawing.Size(143, 22);
-            this.toolStripMenuItem_Copy.Text = "コピー(&C)";
+            toolStripMenuItem_Copy.Image = (Image)resources.GetObject("toolStripMenuItem_Copy.Image");
+            toolStripMenuItem_Copy.ImageTransparentColor = Color.Magenta;
+            toolStripMenuItem_Copy.Name = "toolStripMenuItem_Copy";
+            toolStripMenuItem_Copy.Size = new Size(143, 22);
+            toolStripMenuItem_Copy.Text = "コピー(&C)";
             // 
             // toolStripMenuItem_Paste
             // 
-            this.toolStripMenuItem_Paste.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem_Paste.Image")));
-            this.toolStripMenuItem_Paste.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem_Paste.Name = "toolStripMenuItem_Paste";
-            this.toolStripMenuItem_Paste.Size = new System.Drawing.Size(143, 22);
-            this.toolStripMenuItem_Paste.Text = "貼り付け(&P)";
+            toolStripMenuItem_Paste.Image = (Image)resources.GetObject("toolStripMenuItem_Paste.Image");
+            toolStripMenuItem_Paste.ImageTransparentColor = Color.Magenta;
+            toolStripMenuItem_Paste.Name = "toolStripMenuItem_Paste";
+            toolStripMenuItem_Paste.Size = new Size(143, 22);
+            toolStripMenuItem_Paste.Text = "貼り付け(&P)";
             // 
             // toolStripSeparator_CAPMenu
             // 
-            this.toolStripSeparator_CAPMenu.Name = "toolStripSeparator_CAPMenu";
-            this.toolStripSeparator_CAPMenu.Size = new System.Drawing.Size(140, 6);
+            toolStripSeparator_CAPMenu.Name = "toolStripSeparator_CAPMenu";
+            toolStripSeparator_CAPMenu.Size = new Size(140, 6);
             // 
             // toolStripMenuItem_SelectAll
             // 
-            this.toolStripMenuItem_SelectAll.Name = "toolStripMenuItem_SelectAll";
-            this.toolStripMenuItem_SelectAll.Size = new System.Drawing.Size(143, 22);
-            this.toolStripMenuItem_SelectAll.Text = "すべて選択(&A)";
+            toolStripMenuItem_SelectAll.Name = "toolStripMenuItem_SelectAll";
+            toolStripMenuItem_SelectAll.Size = new Size(143, 22);
+            toolStripMenuItem_SelectAll.Text = "すべて選択(&A)";
             // 
             // toolStripMenuItem_Tool
             // 
-            this.toolStripMenuItem_Tool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_Customize,
-            this.toolStripMenuItem_Option});
-            this.toolStripMenuItem_Tool.Name = "toolStripMenuItem_Tool";
-            this.toolStripMenuItem_Tool.Size = new System.Drawing.Size(60, 20);
-            this.toolStripMenuItem_Tool.Text = "ツール(&T)";
+            toolStripMenuItem_Tool.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem_Customize, toolStripMenuItem_Option });
+            toolStripMenuItem_Tool.Name = "toolStripMenuItem_Tool";
+            toolStripMenuItem_Tool.Size = new Size(60, 20);
+            toolStripMenuItem_Tool.Text = "ツール(&T)";
             // 
             // toolStripMenuItem_Customize
             // 
-            this.toolStripMenuItem_Customize.Name = "toolStripMenuItem_Customize";
-            this.toolStripMenuItem_Customize.Size = new System.Drawing.Size(143, 22);
-            this.toolStripMenuItem_Customize.Text = "カスタマイズ(&C)";
+            toolStripMenuItem_Customize.Name = "toolStripMenuItem_Customize";
+            toolStripMenuItem_Customize.Size = new Size(143, 22);
+            toolStripMenuItem_Customize.Text = "カスタマイズ(&C)";
             // 
             // toolStripMenuItem_Option
             // 
-            this.toolStripMenuItem_Option.Name = "toolStripMenuItem_Option";
-            this.toolStripMenuItem_Option.Size = new System.Drawing.Size(143, 22);
-            this.toolStripMenuItem_Option.Text = "オプション(&O)";
+            toolStripMenuItem_Option.Name = "toolStripMenuItem_Option";
+            toolStripMenuItem_Option.Size = new Size(143, 22);
+            toolStripMenuItem_Option.Text = "オプション(&O)";
             // 
             // toolStripMenuItem_Help
             // 
-            this.toolStripMenuItem_Help.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem_OpenHelp,
-            this.toolStripSeparator_HelpMenu,
-            this.toolStripMenuItem_About});
-            this.toolStripMenuItem_Help.Name = "toolStripMenuItem_Help";
-            this.toolStripMenuItem_Help.Size = new System.Drawing.Size(65, 20);
-            this.toolStripMenuItem_Help.Text = "ヘルプ(&H)";
+            toolStripMenuItem_Help.DropDownItems.AddRange(new ToolStripItem[] { toolStripMenuItem_OpenHelp, toolStripSeparator_HelpMenu, toolStripMenuItem_About });
+            toolStripMenuItem_Help.Name = "toolStripMenuItem_Help";
+            toolStripMenuItem_Help.Size = new Size(65, 20);
+            toolStripMenuItem_Help.Text = "ヘルプ(&H)";
             // 
             // toolStripMenuItem_OpenHelp
             // 
-            this.toolStripMenuItem_OpenHelp.Name = "toolStripMenuItem_OpenHelp";
-            this.toolStripMenuItem_OpenHelp.Size = new System.Drawing.Size(167, 22);
-            this.toolStripMenuItem_OpenHelp.Text = "ヘルプを開く";
+            toolStripMenuItem_OpenHelp.Name = "toolStripMenuItem_OpenHelp";
+            toolStripMenuItem_OpenHelp.Size = new Size(167, 22);
+            toolStripMenuItem_OpenHelp.Text = "ヘルプを開く";
             // 
             // toolStripSeparator_HelpMenu
             // 
-            this.toolStripSeparator_HelpMenu.Name = "toolStripSeparator_HelpMenu";
-            this.toolStripSeparator_HelpMenu.Size = new System.Drawing.Size(164, 6);
+            toolStripSeparator_HelpMenu.Name = "toolStripSeparator_HelpMenu";
+            toolStripSeparator_HelpMenu.Size = new Size(164, 6);
             // 
             // toolStripMenuItem_About
             // 
-            this.toolStripMenuItem_About.Name = "toolStripMenuItem_About";
-            this.toolStripMenuItem_About.Size = new System.Drawing.Size(167, 22);
-            this.toolStripMenuItem_About.Text = "バージョン情報(&A)...";
+            toolStripMenuItem_About.Name = "toolStripMenuItem_About";
+            toolStripMenuItem_About.Size = new Size(167, 22);
+            toolStripMenuItem_About.Text = "バージョン情報(&A)...";
             // 
             // picMain
             // 
-            this.picMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picMain.Location = new System.Drawing.Point(0, 49);
-            this.picMain.Name = "picMain";
-            this.picMain.Size = new System.Drawing.Size(1207, 658);
-            this.picMain.TabIndex = 18;
-            this.picMain.TabStop = false;
-            this.picMain.Paint += new System.Windows.Forms.PaintEventHandler(this.picMain_Paint);
+            picMain.Dock = DockStyle.Fill;
+            picMain.Location = new Point(0, 49);
+            picMain.Name = "picMain";
+            picMain.Size = new Size(1207, 658);
+            picMain.TabIndex = 18;
+            picMain.TabStop = false;
+            picMain.Paint += picMain_Paint;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1207, 729);
-            this.Controls.Add(this.picMain);
-            this.Controls.Add(this.tableLayoutPanelTop);
-            this.Controls.Add(this.statusStrip);
-            this.Name = "Main";
-            this.Text = "AILDOTEDT";
-            this.tableLayoutPanelTop.ResumeLayout(false);
-            this.tableLayoutPanelTop.PerformLayout();
-            this.toolStripCommand.ResumeLayout(false);
-            this.toolStripCommand.PerformLayout();
-            this.toolStripContent.ResumeLayout(false);
-            this.toolStripContent.PerformLayout();
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picMain)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
+            ClientSize = new Size(1207, 729);
+            Controls.Add(picMain);
+            Controls.Add(tableLayoutPanelTop);
+            Controls.Add(statusStrip);
+            Name = "Main";
+            Text = "AILDOTEDT";
+            tableLayoutPanelTop.ResumeLayout(false);
+            tableLayoutPanelTop.PerformLayout();
+            toolStripCommand.ResumeLayout(false);
+            toolStripCommand.PerformLayout();
+            toolStripContent.ResumeLayout(false);
+            toolStripContent.PerformLayout();
+            menuStrip.ResumeLayout(false);
+            menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picMain).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
